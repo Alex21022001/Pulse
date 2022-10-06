@@ -11,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="src/css/slick.css">
+    <link rel="stylesheet" href="src/css/animate.min.css">
     <link rel="stylesheet" href="src/css/Style.css">
 </head>
 <body>
-<section class="promo">
+<section class="promo" id="promo">
     <div class="container">
         <header class="header">
             <a href="#" class="header__logo">
@@ -77,7 +78,7 @@
                 </div>
             </div>
             <div class="benefits__icon">
-                <img src="src/icons/advantages/heart.png" alt="">
+                <img src="src/icons/advantages/heart.png" class="benefits__icon_heart" alt="">
                 <h3>Заботимся о здоровье</h3>
                 <div>Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам
                     и Вашим близким!
@@ -102,10 +103,10 @@
             <div class="consultation__description">Просто заполните форму заявки <br>и мы перезвоним вам в течении 10
                 минут
             </div>
-            <form class="feed-form" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя">
-                <input name="phone" required type="number" placeholder="Ваш телефон">
-                <input name="email" required type="email" placeholder="Ваш E-mail">
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone"  placeholder="Ваш телефон">
+                <input name="email"  type="email" placeholder="Ваш E-mail">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
@@ -484,7 +485,7 @@
     </div>
 </section>
 
-<section class="reviews">
+<section class="reviews" id="reviews">
     <div class="container">
         <h2 class="title title_reviews">отзывы клиентов</h2>
         <div class="reviews__content">
@@ -580,9 +581,9 @@
         <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
         <div class="modal__descr">И мы перезвоним вам в течении 10 минут</div>
         <form class="feed-form feed-form_mt-25" action="#">
-            <input name="name" required type="text" placeholder="Ваше имя">
-            <input name="phone" required type="number" placeholder="Ваш телефон">
-            <input name="email" required type="email" placeholder="Ваш E-mail">
+            <input name="name"  type="text" placeholder="Ваше имя">
+            <input name="phone"  placeholder="Ваш телефон">
+            <input name="email"  type="email" placeholder="Ваш E-mail">
             <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
     </div>
@@ -592,9 +593,9 @@
         <h2 class="modal__subtitle">Ваш заказ:</h2>
         <div class="modal__descr">Пульсометр Polar FT1</div>
         <form class="feed-form feed-form_mt-25" action="#">
-            <input name="name" required type="text" placeholder="Ваше имя">
-            <input name="phone" required type="number" placeholder="Ваш телефон">
-            <input name="email" required type="email" placeholder="Ваш E-mail">
+            <input name="name"  type="text" placeholder="Ваше имя">
+            <input name="phone"  placeholder="Ваш телефон">
+            <input name="email"  type="email" placeholder="Ваш E-mail">
             <button class="button button_submit">Купить</button>
         </form>
     </div>
@@ -606,9 +607,15 @@
     </div>
 </div>
 
+<a href="#promo" class="pageup">
+    <img src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/32/000000/external-up-arrow-kmg-design-outline-color-kmg-design.png"/>
+</a>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.4.1.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="src/js/jquery.mask.min.js"></script>
 <script type="text/javascript" src="src/js/slick.min.js"></script>
+<script src="src/js/wow.min.js"></script>
 <script src="src/js/Script.js"></script>
 </body>
 </html>

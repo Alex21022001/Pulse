@@ -1,3 +1,14 @@
+@keyframes heart {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 * {
   font-family: "MuseoModerno", sans-serif;
 }
@@ -151,6 +162,9 @@
 .benefits__icon {
   width: 269px;
 }
+.benefits__icon_heart {
+  animation: heart 3.5s infinite;
+}
 .benefits__icon img {
   display: block;
   margin: 0 auto;
@@ -185,6 +199,14 @@
   font-weight: 500;
   font-size: 20px;
   color: #FFFFFF;
+}
+.consultation .error {
+  border: 3px solid red;
+}
+.consultation label.error {
+  border: none;
+  color: red;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -548,6 +570,14 @@
   transform: translate(-50%, -50%);
   background: #f2f2f2;
 }
+.modal .error {
+  border: 2px solid red;
+}
+.modal label.error {
+  border: none;
+  color: red;
+  margin-bottom: 10px;
+}
 .modal__subtitle {
   font-weight: 700;
   font-size: 19px;
@@ -596,6 +626,18 @@
 
 #consultation-modal, #order-modal, #thanks-modal {
   display: none;
+}
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}
+.pageup img {
+  width: 100%;
 }
 
 .xs-visible {
